@@ -7,8 +7,9 @@ const SideDrawer = ({ handleDrawerToggle, isOpen }) => {
   return (
     <Drawer open={isOpen}>
       <AppBar title="Task List" onLeftIconButtonTouchTap={handleDrawerToggle} />
-      <MenuItem>Menu Item 1</MenuItem>
-      <MenuItem>Menu Item 2</MenuItem>
+      <MenuItem>All</MenuItem>
+      <MenuItem>Pinned</MenuItem>
+      <MenuItem>Snoozed</MenuItem>
     </Drawer>
   );
 };
