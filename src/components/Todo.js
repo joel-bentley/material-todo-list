@@ -7,6 +7,7 @@ const Todo = ({ onClick, completed, text }) => (
   <FormControlLabel
     control={<Checkbox onChange={onClick} checked={completed} />}
     label={text}
+    style={{ marginLeft: 100 }}
   />
 );
 

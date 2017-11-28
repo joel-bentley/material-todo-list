@@ -4,7 +4,7 @@ import { FormGroup } from 'material-ui/Form';
 import Todo from './Todo';
 
 const TodoList = ({ todos, onTodoClick }) => (
-  <FormGroup column>
+  <FormGroup>
     {todos.map(todo => (
       <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
     ))}

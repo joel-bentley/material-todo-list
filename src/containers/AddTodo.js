@@ -8,7 +8,7 @@ let AddTodo = ({ dispatch }) => {
   let input;
 
   return (
-    <div>
+    <div style={{marginBottom: 20}}>
       <form
         onSubmit={e => {
           e.preventDefault();
@@ -20,8 +20,7 @@ let AddTodo = ({ dispatch }) => {
           input.value = '';
         }}
       >
-        <TextField name="todo" />
-        &nbsp;
+        <TextField name="todo" style={{ marginRight: 20 }} />
         <Button raised color="accent" type="submit">
           Add Todo
         </Button>
