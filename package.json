@@ -2,18 +2,18 @@
   "name": "material-todo-list",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "react-scripts": "0.9.5"
-  },
   "dependencies": {
-    "lodash": "^4.17.4",
-    "material-ui": "^0.17.3",
-    "moment": "^2.18.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-redux": "^5.0.4",
-    "react-tap-event-plugin": "^2.0.1",
-    "redux": "^3.6.0"
+    "jss": "^9.3.3",
+    "jss-preset-default": "^4.0.1",
+    "material-ui": "^1.0.0-beta.21",
+    "proptypes": "^1.1.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-jss": "^8.1.0",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.17",
+    "recompose": "^0.26.0",
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",

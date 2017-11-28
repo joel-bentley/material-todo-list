@@ -1,33 +1,15 @@
 import React from 'react';
+import Footer from './Footer';
+import AddTodo from '../containers/AddTodo';
+import VisibleTodoList from '../containers/VisibleTodoList';
+import Card from 'material-ui/Card';
 
-import SideDrawer from './SideDrawer';
-import Header from './Header';
-import Main from './Main';
-
-import './App.css';
-
-class App extends React.Component {
-  state = {
-    isDrawerOpen: false,
-  };
-
-  handleDrawerToggle = () => {
-    this.setState(prevState => ({ isDrawerOpen: !prevState.isDrawerOpen }));
-  };
-
-  render() {
-    const { isDrawerOpen } = this.state;
-    return (
-      <div className="app">
-        <SideDrawer
-          handleDrawerToggle={this.handleDrawerToggle}
-          isOpen={isDrawerOpen}
-        />
-        <Header handleDrawerToggle={this.handleDrawerToggle} />
-        <Main />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <Card>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </Card>
+);
 
 export default App;
